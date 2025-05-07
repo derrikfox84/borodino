@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Borodino</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <style>
+      .navbar-toggler{
+        background: #ff4447; !important
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Offset for fixed navbar */
+      body {
+        padding-top: 56px; /* Adjust based on navbar height */
+      }
+
+      h2 {
+        color: #ff4447;
+      }
+
+      section {
+        padding-top: 56px; /* Adjust based on navbar height */
+        margin-top: -56px; /* Adjust based on navbar height */
+      }
+
+      /* Color Theme Overrides */
+      body {
+        background-color: #0d293a; /* Dark Blue */
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .navbar {
+        background-color: #0d293a; /* Teal */
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .navbar .nav-link {
+        color: #f0eff0; /* Light Gray */
+        font-weight: normal;
+      }
+
+      .navbar .nav-link:hover {
+        color: #f0eff0; /* Light Gray */
+        text-decoration: underline;
+      }
+
+      .carousel-caption.text-left {
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .featurette-heading {
+        color: #ff4447; /* Red */
+      }
+
+      .lead {
+        color: #71a7a6; /* Light Teal */
+      }
+
+      a {
+        color: #257985; /* Teal */
+      }
+
+      a:hover {
+        color: #ff4447; /* Red */
+      }
+
+      .footer {
+        background-color: #0d293a; /* Dark Blue */
+        color: #f0eff0; /* Light Gray */
+      }
+
+      /* Container holding the iframes to make them side by side and centered */
+      .video-container {
+        display: flex;
+        justify-content: center; /* Centers the videos horizontally */
+        flex-wrap: wrap; /* Allows videos to wrap onto the next line on small screens */
+        gap: 20px; /* Adds space between videos when side by side */
+      }
+
+      /* Ensuring the videos maintain their aspect ratio */
+      iframe {
+        width: 640px;
+        height: 360px;
+        border: 1px solid #e6e6e6;
+      }
+
+      #local {
+        text-align: center;
+      }
+
+    </style>
+    <script>
+      (function(name,path,ctx){ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}})
+      ('KeenTracking', 'https://cdn.jsdelivr.net/npm/keen-tracking@4/dist/keen-tracking.min.js', this);
+    
+      KeenTracking.ready(function(){
+        const client = new KeenTracking({
+          projectId: '66c16fa840af146c8b6199ef',
+          writeKey: 'e3164811a8c36cfc75e7967d04d62b3d6cc9e49c8281d6a06d8ae847a83c25b5886237a023d143c89465c346cdaca1a5f73a394edfb64b1c6deec362efe7494a7949fa04088d8a67cc9bfa1502fe35c193a21873667bc1c8b003544dd9b6cf0f'
+        });
+    
+        // Record events automatically
+        client.initAutoTracking();
+      });
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand" href="#" style="color: #f0eff0;">Borodino Consulting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: #f0eff0;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home" style="color: #f0eff0;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#consulting-services" style="color: #f0eff0;">Consulting Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#major-league-baseball" style="color: #f0eff0;">Major League Baseball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me" style="color: #f0eff0;">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="home" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="austin.png" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Derrik Fox</h1>
+                <br>
+                <p>Tenured sales leader offering a personalized sales strategy, hands-on consulting, training, and testing. 
+                <br>
+                I'll spend time with you researching and understanding your business then build a solution towards your goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container marketing">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="dk.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>About Me</h2>
+            <p>I am recognized as a high-performing, hard-charging Sales Executive, serving as a growth engine for organizations including FinTech and Marketing Automation companies. I identify opportunities for growth, penetrate new markets, and build long-standing, trusted relationships with key decision makers including C-Suite leaders.</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="network.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Proven Track Record</h2>
+            <p>Award-Winning Sales Leader:
+            <br>• Delivered significant sales achievements throughout career
+            <br>• Earned President’s Club honors multiple times
+            <br>• Attaining up to 220% of sales goals, and several top ranked sales performances</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="approach.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Unique Sales Approach</h2>
+            <p>I develop and execute comprehensive sales and revenue-generating strategies to attain sustainable YoY sales growth. I foster a culture of high-performance, excellence, and collaboration in order to capitalize on fluid markets and trends, and enter untapped segments and verticals.</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div id="consulting-services" class="row featurette align-items-end">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Consulting Services <span class="text-muted"><br>Reach out for a preliminary conversation.</span></h2>
+            <p class="lead">I'm confident that we can bring you one to two steps closer to your targets by identifying your primary bottlenecks and friction points in a discovery call.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto align-self-end" src="consulting.png" alt="Conversation">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div id="major-league-baseball" class="row featurette align-items-end">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Effort to bring Major League Baseball to Austin <span class="text-muted"><br>The wheels are in motion...</span></h2>
+            <p class="lead">Derrik Fox and Borodino Consulting are active in concerted efforts to bring major league baseball to Austin by 2029. To learn more about this initiative go to <a href="https://atxmlb.com">atxmlb.com</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto align-self-end" src="mlb.jpg" alt="MLB">
+          </div>
+        </div>
+        <br>
+        <p class="lead" id="local">See what the local news stations have to say about the progress at both <a href="https://www.kvue.com/article/sports/baseball/major-league-baseball-austin/269-7b8bcd53-6cdd-4da1-9b3f-b13313df2be1#lze1alnzntyj5r6yxqr">KVUE</a> and <a href="https://www.kxan.com/news/local/austin/effort-underway-to-bring-major-league-baseball-team-to-austin-is-it-possible/">KXAN</p>
+        <div class="video-container">
+          <iframe width="640" height="360" style="border:1px solid #e6e6e6" src="https://www.kvue.com/embeds/video/responsive/269-26ddec0a-14f9-4242-8a4b-1ca901733d4f/iframe" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+
+          <iframe id="nxs-video-iframe" data-frame-src="9912121" width="640" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" layout="responsive" src="https://redir1.kxan.com/nxs-video-player/eyJ2aWRlb19pZCI6Ijk5MTIxMjEiLCJwb3N0X2lkIjoyMzU0MTY4LCJhZHRhZ191cmwiOiJhdHVfcDE/c3o9MXgxMDAwJml1PVwvNTY3OFwvbGluLmt4YW5cL25ld3NcL2xvY2FsXC9hdXN0aW4maW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1hdHVfcDImdmNvbnA9MiZjdXN0X3BhcmFtcz12aWQ9OTkxMjEyMSZzdGF0aW9uPUtYQU4mY21zaWQ9MjM1NDE2OCZwaWQ9MjM1NDE2OCZwZXJzX2NpZD1ueHMtNDAtYXJ0aWNsZS0yMzU0MTY4JnZpZGNhdD1cL25ld3NcL2xvY2FsXC9hdXN0aW4mYm9iX2NrPVtib2JfY2tfdmFsXSZkX2NvZGU9MSZwYWdldHlwZT1zdG9yeSZobG1ldGE9ZWZmb3J0IHVuZGVyd2F5IHRvIGJyaW5nIG1ham9yIGxlYWd1ZSBiYXNlYmFsbCB0ZWFtIHRvIGF1c3RpbiBpcyBpdCBwb3NzaWJsZSZhYT1mIiwicG9zdF90eXBlIjoicG9zdCIsImluamVjdGVkX3ZpYSI6ImFtcCIsImFkX3Byb3ZpZGVyIjoiZ2FtIiwiaW5fd3BfZWRpdG9yIjpmYWxzZSwiYWxsb3dfYXV0b3BsYXkiOnRydWUsImlzX2xpdmVibG9nIjpmYWxzZX0=" scrolling="no" frameborder="0" allowfullscreen>		</iframe>            
+        </div>        
+        <hr class="featurette-divider">
+
+        <div id="contact-me" class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Contact Me <span class="text-muted"><br>Get in touch!</span></h2>
+            <p class="lead">You can reach me at <a href="mailto:derrikfox@gmail.com">derrikfox@gmail.com</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="contact.jpg" alt="Contact" >
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+      </div><!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="footer container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>2024 Borodino Fox</p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="slim.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="slim.js"><\/script>')</script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="holder.min.js"></script>
+  </body>
+</html>
